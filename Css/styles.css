@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'fuk';
-    src: url('/Css/Lobster-Regular.ttf') format('truetype');
+    src: url('Css/Lobster-Regular.ttf') format('truetype');
     /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 @font-face {
     font-family: 'rubik';
-    src: url('/Css/Rubik80sFade-Regular.ttf') format('truetype');
+    src: url('Css/Rubik80sFade-Regular.ttf') format('truetype');
     /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 @font-face {
     font-family: 'dosis';
-    src: url('/Css/Dosis-VariableFont_wght.ttf') format('truetype');
+    src: url('Css/Dosis-VariableFont_wght.ttf') format('truetype');
     /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 ::-webkit-scrollbar {
