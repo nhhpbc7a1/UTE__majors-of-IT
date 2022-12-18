@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/800910085c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/Css/styles.css">
-    <script src="/Js/main.js"></script>
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="Css/styles.css">
+    <script src="Js/main.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
     <div class="header trans">
@@ -36,26 +36,26 @@
 </body>
 <script>
     var name = window.localStorage.getItem("name");
-    fetch("/DATA/" + name + ".json")
+    fetch("DATA/" + name + ".json")
         .then(Response => Response.json())
         .then(data => {
             document.querySelector("#Para").innerText = data.content
 
         })
     var a = document.getElementById('Head');
-    a.src = "/DATA/" + name + "/Pictures/header.jpg"
+    a.src = "DATA/" + name + "Pictures/header.jpg"
 
     var b = document.getElementById('img1');
-    b.src = "/DATA/" + name + "/Pictures/001.jpg"
+    b.src = "DATA/" + name + "Pictures/001.jpg"
 
     var c = document.getElementById('img2');
-    c.src = "/DATA/" + name + "/Pictures/002.jpg"
+    c.src = "DATA/" + name + "Pictures/002.jpg"
 
     var d = document.getElementById('img3');
-    d.src = "/DATA/" + name + "/Pictures/003.jpg"
+    d.src = "DATA/" + name + "Pictures/003.jpg"
     
     function goBack(){
-        window.location.href="/index.html";
+        window.location.href="index.html";
     }
 </script>
 </html>
