@@ -219,8 +219,10 @@ html {
     padding: 2vw;
 }
 
-.mono {
-    width: 30vw;
+.monoCard_pic {
+    flex: 1;
+    width: 40vw;
+    object-fit: cover;
 }
 
 .monoCard p {
@@ -426,6 +428,15 @@ html {
     text-decoration: none;
     color:rgba(62, 66, 66, 1);
 }
+
+.footer_designer_item:hover
+, .footer_searcher_item:hover
+, .footer_marjor_item:hover{
+    
+    text-decoration: none;
+    color:rgba(62, 66, 66, 0.5);
+}
+
 .footer_marjor_item {
     cursor: pointer;
 }

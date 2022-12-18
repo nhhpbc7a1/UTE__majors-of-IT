@@ -25,6 +25,7 @@
         </ul>
         <div class="searchHolder"></div>
     </div>
+
     <div id="part1" class="contentSlider">
         <div class="Nav right" onclick="header_go('1')"><i class="fa-solid fa-arrow-right fa-2x"></i></div>
         <div class="Nav left" onclick="header_go('2')"><i class="fa-solid fa-arrow-left fa-2x"></i></div>
@@ -44,15 +45,17 @@
 
     <div id="part2" class="monoLouge">
         <div class="monoCard">
-            <img class="mono" src="component/Mono.jpg">
-
-            <p>
-   Từ khóa công nghệ thông tin đã không còn xa lạ đối với mọi người, và gần như trong tất cả các lĩnh vực đời sống xã hội đều cần sự góp mặt của CNTT. Việt Nam đang trên con đường phát triển công nghiệp hóa hiện đại hóa, vì vậy công nghệ thông tin trở thành ngành rất “hot” và nhu cầu về nguồn nhân lực càng trở nên cấp thiết ở nước ta.
-
-   Website ‘Behocode’ tạo ra nhằm giúp mọi người hiểu hơn về các chuyên ngành của công nghệ thông tin, để có những góc nhìn, những quyết định chọn chuyên ngành phù hợp nhất.
-            </p>
+            <img class="monoCard_pic" src="component/Mono.jpg">
+            <div class="monoCard_inf">
+                <h1>Chào mừng đến với website giới thiệu các chuyên ngành công nghệ thông tin</h1>
+                <p>
+       Website ‘Behocode’ tạo ra nhằm giúp mọi người hiểu hơn về các chuyên ngành của công nghệ thông tin, để có những góc nhìn, những quyết định chọn chuyên ngành phù hợp nhất.
+                </p>
+    
+            </div>
         </div>
     </div>
+
     <div id="part3" class="memberSlide">
         <div class="Nav right" onclick="mem_go('1')"><i class="fa-solid fa-arrow-right fa-2x"></i></div>
         <div class="Nav left" onclick="mem_go('2')"><i class="fa-solid fa-arrow-left fa-2x"></i></div>
@@ -171,44 +174,45 @@ Mail: 22110022@student.hcmute.edu.vn
                     </p>
                 </div>
             </div>
-            
         </div>
-        <div id="part4" class="footer">
-            <div class="footer_style">
-                <div class="footer_designer">
-                    <h3 class="footer_designer_title">Thiết kế</h3></br>
-                    <a class="footer_designer_item" href="#mem_slide1">Nguyễn Hoàng Huy</a>
-                    <a class="footer_designer_item" href="#mem_slide4">Lý Đăng Triều</a>
-                </div>
-                <div class="footer_searcher">            
-                    <h3 class="footer_searcher_title">Nội dung</h3></br>
-                    <a class="footer_searcher_item" href="#mem_slide2">Đỗ Gia Huấn</a>
-                    <a class="footer_searcher_item" href="#mem_slide3">Nguyễn Thế Tấn Phát</a>
-                    <a class="footer_searcher_item" href="#mem_slide5">Phạm Võ Trường Quân</a>
-                    <a class="footer_searcher_item" href="#mem_slide6">Phạm Lê Thành Đức</a>
-                </div>
-                <div class="footer_marjor">
-                    <h3 class="footer_marjor_title">Các chuyên ngành</h3></br>
-                    <div class="footer_marjor_item" onclick="Read(1)">Computer science</div>
-                    <div class="footer_marjor_item" onclick="Read(2)">Information technology</div>
-                    <div class="footer_marjor_item" onclick="Read(3)">Data Communication and Computer Network</div>
-                    <div class="footer_marjor_item" onclick="Read(4)">Computer Engineering</div>
-                    <div class="footer_marjor_item" onclick="Read(5)">Network Technology</div>
-                    <div class="footer_marjor_item" onclick="Read(6)">Software Engineering</div>
-                    <div class="footer_marjor_item" onclick="Read(7)">Management Information Systems</div>
-                    <div class="footer_marjor_item" onclick="Read(8)">Big Data & Machine Learning</div>
-                    <div class="footer_marjor_item" onclick="Read(9)">Graphic/Game/Multimedia Design</div>
-                </div>
+    </div>
+
+    <div id="part4" class="footer">
+        <div class="footer_style">
+            <div class="footer_designer">
+                <h3 class="footer_designer_title">Thiết kế</h3></br>
+                <a class="footer_designer_item" href="#mem_slide1">Nguyễn Hoàng Huy</a>
+                <a class="footer_designer_item" href="#mem_slide4">Lý Đăng Triều</a>
             </div>
-            <div class="license"> 	
-                Copyright © Behocode - HCMUTE
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-phone"></i>
-                <i class="fa-regular fa-envelope"></i>
+            <div class="footer_searcher">            
+                <h3 class="footer_searcher_title">Nội dung</h3></br>
+                <a class="footer_searcher_item" href="#mem_slide2">Đỗ Gia Huấn</a>
+                <a class="footer_searcher_item" href="#mem_slide3">Nguyễn Thế Tấn Phát</a>
+                <a class="footer_searcher_item" href="#mem_slide5">Phạm Võ Trường Quân</a>
+                <a class="footer_searcher_item" href="#mem_slide6">Phạm Lê Thành Đức</a>
+            </div>
+            <div class="footer_marjor">
+                <h3 class="footer_marjor_title">Các chuyên ngành</h3></br>
+                <div class="footer_marjor_item" onclick="Read(1)">1.Computer science</div>
+                <div class="footer_marjor_item" onclick="Read(2)">2.Information technology</div>
+                <div class="footer_marjor_item" onclick="Read(3)">3.Data Communication and Computer Network</div>
+                <div class="footer_marjor_item" onclick="Read(4)">4.Computer Engineering</div>
+                <div class="footer_marjor_item" onclick="Read(5)">5.Network Technology</div>
+                <div class="footer_marjor_item" onclick="Read(6)">6.Software Engineering</div>
+                <div class="footer_marjor_item" onclick="Read(7)">7.Management Information Systems</div>
+                <div class="footer_marjor_item" onclick="Read(8)">8.Big Data & Machine Learning</div>
+                <div class="footer_marjor_item" onclick="Read(9)">9.Graphic/Game/Multimedia Design</div>
             </div>
         </div>
+        <div class="license"> 	
+            Copyright © Behocode - HCMUTE
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+    </div>
 
 </body>
 <script>
