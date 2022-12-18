@@ -47,7 +47,7 @@
 </body>
 <script>
     var name = window.localStorage.getItem("name");
-    fetch("DATA/" + name + ".json")
+    fetch("DATA/" + name + "/" + name +".json")
         .then(Response => Response.json())
         .then(data => {
             document.querySelector("#Para").innerHTML = data.content
