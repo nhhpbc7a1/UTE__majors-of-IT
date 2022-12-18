@@ -39,7 +39,7 @@
     fetch("DATA/" + name + ".json")
         .then(Response => Response.json())
         .then(data => {
-            document.querySelector("#Para").innerText = data.content
+            document.querySelector("#Para").innerHTML = data.content
 
         })
     var a = document.getElementById('Head');
