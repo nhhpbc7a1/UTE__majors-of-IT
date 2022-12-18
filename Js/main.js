@@ -8,7 +8,16 @@ window.onscroll = function () {
         console.log(0);
         $(".header").removeClass("trans")
     }
-}; 
+
+    // if ($(window).scrollTop() == -1) {
+        // console.log(3);
+        // $("#part3").addClass("trans")
+    // }
+    // else {
+        // console.log(4);
+        // $("#part3").removeClass("trans")
+    // }
+ }; 
 // <=== Syntax Error: Closing Parenthese around an if block
 var cuFrame=1;
 function header_go(id){

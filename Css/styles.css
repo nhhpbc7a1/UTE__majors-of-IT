@@ -111,12 +111,13 @@ html {
     z-index: 5;
     position: absolute;
     display: flex;
+    text-align: center;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center;
     font-size: 120px;
-    background: rgba(98, 92, 92, 0.25); 
+    background: rgba(98, 92, 92, 0.5); 
     z-index: 5;
 
 }
@@ -223,11 +224,11 @@ html {
 }
 
 .monoCard p {
-    margin-top: 10vh;
+    margin-top: 0;
     white-space: pre-wrap;
     display: inline-flex;
-    font-family: fuk;
-    font-size: min(3vw,2.2vh);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
 }
 
 .memberSlide {
@@ -350,22 +351,9 @@ html {
     background-color: rgb(164, 144, 116);
 }
 .headerImage{
-    background-color: #ffffff;
+    background-color: #a9a9a9;
     height: 60vh;
     width: 100vw;
-    /* width: 100vw;
-    height: 100vh;
-    overflow: auto;
-    display: flex;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    overflow-y: hidden;
-    object-fit: cover;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    position: relative;
-    z-index:1 ; */
-
 }
 
 .readerSlider{
