@@ -395,7 +395,7 @@ html {
 #Para{
     font-size: 1.5vw;
     line-height: 2vw;
-    margin: 0 15vw;
+    margin: 0 15vw 15vh 15vw;
 }
 #Head{
     width: 100%;
