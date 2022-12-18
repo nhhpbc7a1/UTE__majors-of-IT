@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Behocode</title>
+
     <script src="https://kit.fontawesome.com/800910085c.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="Css/styles.css">
+
     <script src="Js/main.js"></script>
-    <script src="https://node_modules/jquery/dist/jquery.min.js"></script>
+ 
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+
 </head>
 <body>
     <div class="header trans">
@@ -22,12 +31,12 @@
     </div>
     <div class="main">
         <div id="part1" class="readerSlider">
-            <div class="Nav right" onclick="go('1')"><i class="fa-solid fa-arrow-right fa-2x"></i></div>
-            <div class="Nav left" onclick="go('2')"><i class="fa-solid fa-arrow-left fa-2x"></i></div>
+            <div class="Nav right" onclick="reader_go('1')"><i class="fa-solid fa-arrow-right fa-2x"></i></div>
+            <div class="Nav left" onclick="reader_go('2')"><i class="fa-solid fa-arrow-left fa-2x"></i></div>
             <div class="wrapper">
-                <div class="slide" id="slide1"><img id="img1"></div>
-                <div class="slide" id="slide2"><img id="img2"></div>
-                <div class="slide" id="slide3"><img id="img3"></div>
+                <div class="slide" id="reader_slide1"><img id="img1"></div>
+                <div class="slide" id="reader_slide2"><img id="img2"></div>
+                <div class="slide" id="reader_slide3"><img id="img3"></div>
             </div>
     
             <p id="Para" ></p>
