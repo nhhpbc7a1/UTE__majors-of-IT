@@ -52,7 +52,7 @@ html {
 
 .headerItems {
     display: inline-flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-left: 2vw;
     width: 40vw;
     align-items: center;
@@ -72,6 +72,7 @@ html {
     font-family: fuk;
     border: solid 1px rgba(0, 0, 0, 0.092);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-left: 5vw;
 }
 
 .searchHolder {
@@ -349,6 +350,7 @@ html {
     padding: 15px;
 }
 .footer{
+    bottom: 0;
     height: 40vh;
     background-color: rgb(164, 144, 116);
 }
@@ -393,6 +395,7 @@ html {
 #Para{
     font-size: 1.5vw;
     line-height: 2vw;
+    margin: 0 15vw;
 }
 #Head{
     width: 100%;

@@ -23,6 +23,7 @@
     <div class="header trans">
         <ul class="headerItems">
             <li onclick="goBack()"> Trang Chủ</li>   
+            <li onclick="goto(4)"> Contact</li>
         </ul>
         <div class="searchHolder"></div>
     </div>
@@ -30,6 +31,7 @@
         <img id="Head">
     </div>
     <div class="main">
+
         <div id="part1" class="readerSlider">
             <div class="Nav right" onclick="reader_go('1')"><i class="fa-solid fa-arrow-right fa-2x"></i></div>
             <div class="Nav left" onclick="reader_go('2')"><i class="fa-solid fa-arrow-left fa-2x"></i></div>
@@ -39,11 +41,51 @@
                 <div class="slide" id="reader_slide3"><img id="img3"></div>
             </div>
             
-            <div>
-                <p id="Para" ></p>
+        </div>
+        
+        <div>
+            <p id="Para" ></p>
+        </div>
+
+        <div id="part4" class="footer">
+            <div class="footer_style">
+                <div class="footer_designer">
+                    <h3 class="footer_designer_title">Thiết kế</h3></br>
+                    <a class="footer_designer_item" href="#mem_slide1">Nguyễn Hoàng Huy</a>
+                    <a class="footer_designer_item" href="#mem_slide4">Lý Đăng Triều</a>
+                </div>
+                <div class="footer_searcher">            
+                    <h3 class="footer_searcher_title">Nội dung</h3></br>
+                    <a class="footer_searcher_item" href="#mem_slide2">Đỗ Gia Huấn</a>
+                    <a class="footer_searcher_item" href="#mem_slide3">Nguyễn Thế Tấn Phát</a>
+                    <a class="footer_searcher_item" href="#mem_slide5">Phạm Võ Trường Quân</a>
+                    <a class="footer_searcher_item" href="#mem_slide6">Phạm Lê Thành Đức</a>
+                </div>
+                <div class="footer_marjor">
+                    <h3 class="footer_marjor_title">Các chuyên ngành</h3></br>
+                    <div class="footer_marjor_item" onclick="Read(1)">1.Computer science</div>
+                    <div class="footer_marjor_item" onclick="Read(2)">2.Information technology</div>
+                    <div class="footer_marjor_item" onclick="Read(3)">3.Data Communication and Computer Network</div>
+                    <div class="footer_marjor_item" onclick="Read(4)">4.Computer Engineering</div>
+                    <div class="footer_marjor_item" onclick="Read(5)">5.Network Technology</div>
+                    <div class="footer_marjor_item" onclick="Read(6)">6.Software Engineering</div>
+                    <div class="footer_marjor_item" onclick="Read(7)">7.Management Information Systems</div>
+                    <div class="footer_marjor_item" onclick="Read(8)">8.Big Data & Machine Learning</div>
+                    <div class="footer_marjor_item" onclick="Read(9)">9.Graphic/Game/Multimedia Design</div>
+                </div>
+            </div>
+            <div class="license"> 	
+                Copyright © Behocode - HCMUTE
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-regular fa-envelope"></i>
             </div>
         </div>
+    
     </div>
+    
 </body>
 <script>
     var name = window.localStorage.getItem("name");
@@ -65,6 +107,10 @@
     var d = document.getElementById('img3');
     d.src = "DATA/" + name + "/Pictures/003.jpg"
     
+    function goto(e) {
+        window.location.href = '#part' + e;
+    }
+
     function goBack(){
         window.location.href="index.html";
     }
