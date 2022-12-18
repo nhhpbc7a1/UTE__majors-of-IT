@@ -350,9 +350,22 @@ html {
     background-color: rgb(164, 144, 116);
 }
 .headerImage{
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     height: 60vh;
+    width: 100vw; */
     width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    object-fit: cover;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: relative;
+    z-index:1 ;
+
 }
 
 .readerSlider{
@@ -388,7 +401,7 @@ html {
 
 }
 #Para{
-    font-size: 2vw;
+    font-size: 1.5vw;
 
 }
 #Head{
@@ -396,3 +409,5 @@ html {
     height: 100%;
     object-fit: cover;
 }
+
+/* test ----------------------------------------------------------------------------------------- */

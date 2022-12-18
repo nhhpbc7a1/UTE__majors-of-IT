@@ -22,12 +22,15 @@
 <body>
     <div class="header trans">
         <ul class="headerItems">
-            <li onclick="goBack()"> Trang Chủ</li>
+            <li onclick="goBack()"> Trang Chủ</li>      
         </ul>
         <div class="searchHolder"></div>
     </div>
     <div class="headerImage">
         <img id="Head">
+        <div class="title">
+            <p>Computer Science</p>
+        </div>
     </div>
     <div class="main">
         <div id="part1" class="readerSlider">
@@ -66,5 +69,11 @@
     function goBack(){
         window.location.href="index.html";
     }
+
+    function Read(e){
+        window.localStorage.setItem("name","00"+e)
+        window.location.href="Reader.html";
+    }
+
 </script>
 </html>
