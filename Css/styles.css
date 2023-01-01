@@ -54,27 +54,70 @@ html {
     display: inline-flex;
     /* justify-content: space-between; */
     margin-left: 2vw;
-    width: 40vw;
+    width: 75vw;
     align-items: center;
-    min-width: 400px;
+    min-width: 100px;
 }
 
 .headerItems li {
     cursor: pointer;
     text-align: center;
-    width: 100px;
+    width: 300px;
     height: 50px;
     line-height: 45px;
     display: inline-block;
-    border-radius: 40px;
+    border-radius: 25px;
     background-color: #f2efea;
     text-align: center;
     font-family: fuk;
-    border: solid 1px rgba(0, 0, 0, 0.092);
+    border: 2px solid rgba(0, 0, 0, 0.092);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin-left: 5vw;
 }
+/* new code------------------------------------------------ */
+#majors_list {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+#majors_list > p {
+    padding: 0 20px 0 30px;
+    border-right: 2px solid black;
+}
+#majors_list > i {
+    display: block;
+    height: 50px;
+    width: 20px;
+    padding-top: 15px;
+    padding-right: 25px;
+}
+#majors_list:hover #huy_board_ohno{
+    display: block;
+}
 
+#huy_board_ohno{
+    width: 300px;
+    height: 420px;
+    display: none;
+
+    margin-top: 50px;
+    position: absolute;
+    line-height: 45px;
+    border-radius: 25px;
+    background-color: #f2efea;
+    font-family: fuk;
+    border: 2px solid rgba(0, 0, 0, 0.092);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.list_board 
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* newcode ------------------------------------------------*/
 .searchHolder {
     width: 20vw;
     height: 50px;

@@ -22,7 +22,25 @@
 <body>
     <div class="header trans">
         <ul class="headerItems">
-            <li onclick="goBack()"> Trang Chủ</li>   
+            <li onclick="goBack()"> Trang Chủ</li>  
+            <li id="majors_list">
+                <p>Majors</p>
+                <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                <div id = "huy_board_ohno">
+                    <ul class="list_board">
+                        
+                        <div class = " footer_marjor_item" onclick="Read(1)">1.Computer science</div>
+                        <div class = " footer_marjor_item" onclick="Read(2)">2.Information technology</div>
+                        <div class = " footer_marjor_item" onclick="Read(3)">3.Data Communication and Computer Network</div>
+                        <div class = " footer_marjor_item" onclick="Read(4)">4.Computer Engineering</div>
+                        <div class = " footer_marjor_item" onclick="Read(5)">5.Network Technology</div>
+                        <div class = " footer_marjor_item" onclick="Read(6)">6.Software Engineering</div>
+                        <div class = " footer_marjor_item" onclick="Read(7)">7.Management Information Systems</div>
+                        <div class = " footer_marjor_item" onclick="Read(8)">8.Big Data & Machine Learning</div>
+                        <div class = " footer_marjor_item" onclick="Read(9)">9.Graphic/Game/Multimedia Design</div>
+                    </ul>    
+                </div> 
+            </li> 
             <li onclick="goto(4)"> Contact</li>
         </ul>
         <div class="searchHolder"></div>
